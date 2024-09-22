@@ -1,0 +1,88 @@
+
+<!-- Book Room Section -->
+<section id="room" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./imges/single.jpg" class="card-img-top" alt="Hotel Room">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Experience Luxurious Comfort</h5>
+                        <p class="card-text">>Unwind in a peaceful environment, designed to provide a luxurious experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./imges/double.jpg" class="card-img-top" alt="Hotel Room">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Relax in Style</h5>
+                        <p class="card-text">Our rooms offer the perfect blend of comfort and elegance for a restful stay.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./imges/suites2.jpg" class="card-img-top" alt="Hotel Room">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ultimate Serenity</h5>
+                        <p class="card-text">Enjoy a relaxing stay in one of our well-appointed rooms, featuring modern amenities and beautiful views.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reserve Your Stay Form -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="text-center mb-4">
+                    <h2 class="h2">Reserve Your Stay</h2>
+                </div>
+                <form id="bookingForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="+254-7xxx-xxx-xxx" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="checkIn" class="form-label">Check In</label>
+                        <input type="date" class="form-control" id="checkIn" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="checkOut" class="form-label">Check Out</label>
+                        <input type="date" class="form-control" id="checkOut" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="room-type" class="form-label">Room Type</label>
+                        <select id="room-type" class="form-select" name="room-type" required>
+                            <option value="single">Experience Luxurious Comfort</option>
+                            <option value="double">Relax in Style</option>
+                            <option value="suite">Ultimate Serenity</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="specialRequest" class="form-label">Special Request</label>
+                        <textarea class="form-control" id="specialRequest" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Book Room</button>
+                </form>
+                <div id="confirmationMessage" class="mt-3" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

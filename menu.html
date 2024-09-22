@@ -1,0 +1,260 @@
+
+    <!-- Menu Section -->
+<section id="menu">
+    <div class="container">
+        <h1 class="text-center">Our Menu</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="./imges/spring rolls.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Spring Rolls</h4>
+                        <p class="card-text">A delicious starter with fresh vegetables.$5.99</p>
+                        <p class="card-text">$5.99</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipeModal">See Recipe</a>
+                        <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#orderModal" data-item="Spring Rolls" data-price="5.99">Order Now</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="./imges/chicken wing.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Chicken wings</h4>
+                        <p class="card-text">Spicy and crispy chicken wings.</p>
+                        <p class="card-text">$7.99</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipeModal2">See Recipe</a>
+                        <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#orderModal" data-item="Chicken Wings" data-price="5.99">Order Now</a>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="./imges/picc.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Margherita Pizza</h4>
+                        <p class="card-text">Classic pizza with tomato, mozzarella, and basil.</p>
+                        <p>$9.99</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#margheritaModal">See Recipe</a>
+                        <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#orderModal" data-item="Margherita Pizza" data-price="9.99">Order Now</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of first row -->
+
+        <!-- Second row -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="./imges/beef.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Beef Tacos</h4>
+                        <p class="card-text">Soft tacos with seasoned beef and toppings.</p>
+                        <p>$6.23</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tacosModal">See Recipe</a>
+                        <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#orderModal" data-item="Beef Tacos" data-price="9.99">Order Now</a>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="./imges/choco.jpg" alt="Card image" height="30%">
+                    <div class="card-body">
+                        <h4 class="card-title">Chocolate cake</h4>
+                        <p class="card-text">Rich and moist chocolate cake.</p>
+                        <p>$7.20</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chocolateCakeModal">See Recipe</a>
+                        <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#orderModal" data-item="Chocolate cake" data-price="9.99">Order Now</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+           
+        </div> <!-- End of second row -->
+    </div>
+
+ 
+<!-- Order Modal -->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Order Now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="mb-3">
+                        <label for="itemName" class="form-label">Item</label>
+                        <input type="text" class="form-control" id="itemName" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="itemPrice" class="form-label">Price</label>
+                        <input type="text" class="form-control" id="itemPrice" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="paymentMethod" class="form-label">Payment Method</label>
+                        <select class="form-select" id="paymentMethod" required>
+                            <option value="">Choose...</option>
+                            <option value="credit">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="cash">Cash</option>
+                            <option value="mpesa">M-Pesa</option>
+                        </select>
+                    </div>
+                    <!-- Credit Card Fields -->
+                    <div id="creditCardFields" class="d-none">
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="expiryDate" class="form-label">Expiry Date</label>
+                            <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv">
+                        </div>
+                    </div>
+                    <!-- PayPal Fields -->
+                    <div id="paypalFields" class="d-none">
+                        <div class="mb-3">
+                            <label for="paypalEmail" class="form-label">PayPal Email</label>
+                            <input type="email" class="form-control" id="paypalEmail">
+                        </div>
+                    </div>
+                    <!-- M-Pesa Fields -->
+                    <div id="mpesaFields" class="d-none">
+                        <div class="mb-3">
+                            <label for="mpesaNumber" class="form-label">M-Pesa Number</label>
+                            <input type="text" class="form-control" id="mpesaNumber">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="confirmOrder">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const paymentMethodSelect = document.getElementById('paymentMethod');
+            const creditCardFields = document.getElementById('creditCardFields');
+            const paypalFields = document.getElementById('paypalFields');
+            const mpesaFields = document.getElementById('mpesaFields');
+            
+            // Show/Hide payment fields based on selection
+            paymentMethodSelect.addEventListener('change', function () {
+                // Reset all payment fields initially
+                creditCardFields.classList.add('d-none');
+                paypalFields.classList.add('d-none');
+                mpesaFields.classList.add('d-none');
+        
+                // Show relevant fields based on the selected payment method
+                if (this.value === 'credit') {
+                    creditCardFields.classList.remove('d-none');
+                } else if (this.value === 'paypal') {
+                    paypalFields.classList.remove('d-none');
+                } else if (this.value === 'mpesa') {
+                    mpesaFields.classList.remove('d-none');
+                }
+            });
+        
+            // Populate the modal with item details when "Order Now" button is clicked
+            document.querySelectorAll('.btn-success').forEach(button => {
+                button.addEventListener('click', function () {
+                    const item = this.dataset.item;
+                    const price = this.dataset.price;
+                    document.getElementById('itemName').value = item;
+                    document.getElementById('itemPrice').value = price;
+                });
+            });
+        
+            // Handle form submission and close the modal
+            document.getElementById('orderForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                
+                const itemName = document.getElementById('itemName').value;
+                const itemPrice = document.getElementById('itemPrice').value;
+                const paymentMethod = paymentMethodSelect.value;
+                let paymentDetails = '';
+        
+                if (paymentMethod === 'credit') {
+                    const cardNumber = document.getElementById('cardNumber').value;
+                    paymentDetails = `Card Number: ${cardNumber}`;
+                } else if (paymentMethod === 'paypal') {
+                    const paypalEmail = document.getElementById('paypalEmail').value;
+                    paymentDetails = `PayPal Email: ${paypalEmail}`;
+                } else if (paymentMethod === 'mpesa') {
+                    const mpesaNumber = document.getElementById('mpesaNumber').value;
+                    paymentDetails = `M-Pesa Number: ${mpesaNumber}`;
+                }
+        
+                alert(`Order Confirmed!\nItem: ${itemName}\nPrice: $${itemPrice}\nPayment Method: ${paymentMethod}\n${paymentDetails}`);
+                
+                // Optionally reset the form or close the modal
+                document.getElementById('orderForm').reset();
+                $('#orderModal').modal('hide');
+            });
+        });
+        </script>
+        
+        
+            <script>
+                document.getElementById('bookingForm').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent default form submission
+            
+                    // Get values from the form
+                    const fullName = document.getElementById('fullName').value;
+                    const email = document.getElementById('email').value;
+                    const phoneNumber = document.getElementById('phoneNumber').value;
+                    const checkIn = document.getElementById('checkIn').value;
+                    const checkOut = document.getElementById('checkOut').value;
+                    const roomType = document.getElementById('room-type').value;
+                    const specialRequest = document.getElementById('specialRequest').value;
+            
+                    // Create a confirmation message
+                    const confirmationMessage = `
+                        <h4>Booking Confirmation</h4>
+                        <p>Thank you, ${fullName}! Your booking details are as follows:</p>
+                        <ul>
+                            <li><strong>Email:</strong> ${email}</li>
+                            <li><strong>Phone Number:</strong> ${phoneNumber}</li>
+                            <li><strong>Check In:</strong> ${checkIn}</li>
+                            <li><strong>Check Out:</strong> ${checkOut}</li>
+                            <li><strong>Room Type:</strong> ${roomType}</li>
+                            <li><strong>Special Requests:</strong> ${specialRequest || 'None'}</li>
+                        </ul>
+                    `;
+            
+                    // Display the confirmation message
+                    document.getElementById('confirmationMessage').innerHTML = confirmationMessage;
+                    document.getElementById('confirmationMessage').style.display = 'block';
+            
+                    // Optionally, you can reset the form
+                    // document.getElementById('bookingForm').reset();
+                });
+            </script>
+            
+        
+
+
