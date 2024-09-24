@@ -1,12 +1,8 @@
 # PROJECT_PORFOLIO
 # Build your portfolio project (Week 2): MVP Complete
-# And now, we ship that MVP!
-This week is still all about execution! Hopefully you are on track and have gotten many of the riskiest aspects of your projects completed. It’s time to integrate all the pieces of your project so that you have a functioning project. The deliverable for the upcoming week will be an MVP and a self-assessment of your project.
-
-# PLD: MVP Review
-During the PLD this week, these are the objectives:
-
-- Each team meets with 3 teams they didn’t meet with last week, one at a time for 40 minutes.
-- During the team-team meeting, each team presents for 20 minutes, then observes for 20 minutes.
-- When a team is presenting, they share their MVP and walk through code any they’ve implemented and technical choices they have made.
-- When a team is observing, they ask questions, share observations, and code review. Act more as an interviewer than a mentor.
+# Introduction
+After experiencing long waits to place my order at restaurants, I decided to create an app/website that streamlines the entire process. Waiting for a customer to finish browsing the paper menu and then asking numerous questions about availability and preparation methods was frustrating. I wanted to enhance the dining experience by allowing users to easily browse a food catalog, view recipes, check food availability, and receive personalized dietary recommendations — all from the comfort of their seats. Additionally, the app will enable users to place orders and book hotel rooms seamlessly. This vision inspired my project.
+- Deployed Site: localhost(but will implement that later)
+- Project Blog Article: https://medium.com/@bollodenis/introduction-135bffc22dc1
+- Author(s):
+    -- Denis Otieno Bollo[linkedin.com/in/dennis-bollo-303747160]
